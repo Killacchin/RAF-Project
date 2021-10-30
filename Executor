@@ -1,0 +1,58 @@
+-- REVENGERS AUTO FARM PROJECT 0.01                           @KILLACCHIN - GITHUB ---
+
+
+
+local workspace = game.Workspace
+local activation = false
+local plr = game.Players.LocalPlayer
+
+local ScreenGUI = Instance.new("ScreenGui",plr.PlayerGui)
+ScreenGUI.Name = "RAFP"
+
+
+local Button = Instance.new("ButtonText",ScreenGUI)
+Button1.Name = "AutoFarm"
+Button.Draggable = true
+
+
+Button.MouseClick:connect(function()
+
+if activation == false then
+activation = true
+elseif activation == true then
+activation = false
+end
+
+
+end
+
+
+while true do wait()
+
+    if activation == true then
+        AutoFarm()
+    end
+
+end
+
+function AutoFarm()    
+local clickdetector = workspace.Game.JobStuff.Crates.ClickDetector
+local distancefactor = math.random(460,500)
+local cratepoint = workspace.Game.JobStuff.CratePoint
+local sconstruction = 2000
+local getplr = workspace.Game.Characters[plr.Name]
+local x1 = -5
+local x2 = 5
+
+cratepoint.Size = Vector3.new(sconstruction,sconstruction,sconstruction)
+
+local args = {
+    [1] = "kaoru",
+    [2] = "take"
+}
+game:GetService("ReplicatedStorage").Events.DialogueAnswer:InvokeServer(unpack(args))
+fireclickdetector(clickdetector,distancefactor)
+spawn(function()
+getplr.HumanoidRootPart.Rotation = math.random(x1,x2)
+end)
+end
