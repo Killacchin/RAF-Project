@@ -3,7 +3,7 @@ local Window = Library.CreateLib("RFA Project - 0.05", "Synapse")
 
 local AutoFarm = Window:NewTab("AutoFarm")
 
-local Section = AutoFarm:NewSection("Auto Money")
+local Section = AutoFarm:NewSection("#LevelUpALot")
 
 _G.AutoStrength = false
 _G.SitUp = false
