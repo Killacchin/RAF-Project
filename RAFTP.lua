@@ -92,10 +92,10 @@ function AutoStrength()
     while true do wait()
         
         if _G.AutoStrength == true then
-            local clicked = false
-            if game.Players.LocalPlayer.Stats.Stamina.Value >= 100 and clicked == false then    
+            
+            if game.Players.LocalPlayer.Stats.Stamina.Value >= 100  then    
                 fireclickdetector(game:GetService("Workspace").Game.WorkOut.PushUp.Part.ClickDetector)
-                clicked = true
+               
              end
 
     if game.Players.LocalPlayer.Stats.Fatigue.Value >= 80 or game.Players.LocalPlayer.Stats.Hunger.Value <= 30 then
@@ -121,7 +121,7 @@ function AutoStrength()
             
             
             else
-                clicked = false
+               
             break
             
            end --Auto Strength
@@ -137,10 +137,10 @@ function AutoSitUp()
     while true do wait()
        
         if _G.SitUp == true then
-            local clicked = false
-            if game.Players.LocalPlayer.Stats.Stamina.Value >= 100 and clicked == false then    
+           
+            if game.Players.LocalPlayer.Stats.Stamina.Value >= 100 then    
                 fireclickdetector(game:GetService("Workspace").Game.WorkOut.SitUp.Part.ClickDetector)
-                clicked = true
+                
              end
 
     if game.Players.LocalPlayer.Stats.Fatigue.Value >= 80 or game.Players.LocalPlayer.Stats.Hunger.Value <= 30 then
@@ -166,7 +166,7 @@ function AutoSitUp()
             
             
             else
-                clicked = false
+               
             break
             
            end --Auto SitUp
@@ -180,10 +180,10 @@ function AutomSquats()
     while true do wait()
         
         if _G.AutoSquats == true then
-            local clicked = false
-            if game.Players.LocalPlayer.Stats.Stamina.Value >= 100 and clicked == false then    
+           
+            if game.Players.LocalPlayer.Stats.Stamina.Value >= 100 then    
                 fireclickdetector(game:GetService("Workspace").Game.WorkOut.Squats.Part.ClickDetector)
-                clicked = true
+               
              end
 
     if game.Players.LocalPlayer.Stats.Fatigue.Value >= 80 or game.Players.LocalPlayer.Stats.Hunger.Value <= 30 then
@@ -209,7 +209,7 @@ function AutomSquats()
             
             
             else
-                clicked = true
+                
             break
             
            end --Auto SitUp
