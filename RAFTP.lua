@@ -95,7 +95,7 @@ function AutoStrength()
             
             if game.Players.LocalPlayer.Stats.Stamina.Value >= 100  then    
                 fireclickdetector(game:GetService("Workspace").Game.WorkOut.PushUp.Part.ClickDetector)
-               
+               print("Clickadoooo")
              end
 
     if game.Players.LocalPlayer.Stats.Fatigue.Value >= 80 or game.Players.LocalPlayer.Stats.Hunger.Value <= 30 then
