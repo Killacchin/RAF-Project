@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("RFA Project - 0.07", "Synapse")
+local Window = Library.CreateLib("RFA Project - 0.08", "Synapse")
 
 local AutoFarm = Window:NewTab("AutoFarm")
 
