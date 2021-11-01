@@ -5,9 +5,9 @@ local AutoFarm = Window:NewTab("AutoFarm")
 
 local Section = AutoFarm:NewSection("#LevelUpALot")
 
-AutoStrength = false
-SitUp = false
-AutoSquats = false
+local AutoStrengthValue = false
+local SitUp = false
+local AutoSquats = false
 
 
 Section:NewButton("Money", "Make a lot of money, automatic.", function()
@@ -55,11 +55,11 @@ end)
 
 Section:NewButton("Strength Farm", "Auto Farm for you Strength at GYM", function()
     
-    if AutoStrength == false then
-        AutoStrength = true
+    if AutoStrengthValue == false then
+        AutoStrengthValue = true
         AutoStrength()
         else
-           AutoStrength = false
+           AutoStrengthValue = false
            AutoStrength()
        end
 end)
@@ -91,7 +91,7 @@ end)
 function AutoStrength()
     while true do wait()
         
-        if AutoStrength == true then
+        if AutoStrengthValue == true then
             
             if game.Players.LocalPlayer.Stats.Stamina.Value >= 100  then    
                 fireclickdetector(game:GetService("Workspace").Game.WorkOut.PushUp.Part.ClickDetector)
