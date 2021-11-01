@@ -89,7 +89,7 @@ end)
 
 
 function AutoStrength()
-    while true do wait()
+    while true do wait(1)
         
         if AutoStrengthValue == true then
             
@@ -134,7 +134,7 @@ function AutoStrength()
 end
 
 function AutoSitUp()
-    while true do wait()
+    while true do wait(1)
        
         if SitUp == true then
            
@@ -177,7 +177,7 @@ function AutoSitUp()
 end
 
 function AutomSquats()
-    while true do wait()
+    while true do wait(1)
         
         if AutoSquats == true then
            
