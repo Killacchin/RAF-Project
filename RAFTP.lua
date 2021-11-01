@@ -27,6 +27,28 @@ game:GetService("ReplicatedStorage").Events.DialogueAnswer:InvokeServer(unpack(a
 end)
 
 
+Section:NewButton("Rest", "Restore your Hungry and Fatigue. It Costs 600",function()
+    
+    
+    local args = {
+    [1] = "register",
+    [2] = "take1"
+}
+
+game:GetService("ReplicatedStorage").Events.DialogueAnswer:InvokeServer(unpack(args))
+ 
+
+local args = {
+    [1] = "register",
+    [2] = "rest"
+}
+
+game:GetService("ReplicatedStorage").Events.DialogueAnswer:InvokeServer(unpack(args))
+    
+    
+end)
+
+
 
 
 
